@@ -11,6 +11,9 @@
 		FB120D9225CC40970058D141 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB120D9125CC40970058D141 /* ContentView.swift */; };
 		FB120D9425CC409B0058D141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB120D9325CC409B0058D141 /* Assets.xcassets */; };
 		FB120D9725CC409B0058D141 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB120D9625CC409B0058D141 /* Preview Assets.xcassets */; };
+		FBB281B925CDA8ED0014FAAC /* Darius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB281B825CDA8ED0014FAAC /* Darius.swift */; };
+		FBB281BC25CDA9010014FAAC /* Hockey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB281BB25CDA9010014FAAC /* Hockey.swift */; };
+		FBB281BF25CDA92F0014FAAC /* NikeDunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB281BE25CDA92F0014FAAC /* NikeDunk.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		FB120D9325CC409B0058D141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB120D9625CC409B0058D141 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB120D9825CC409B0058D141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB281B825CDA8ED0014FAAC /* Darius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Darius.swift; sourceTree = "<group>"; };
+		FBB281BB25CDA9010014FAAC /* Hockey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hockey.swift; sourceTree = "<group>"; };
+		FBB281BE25CDA92F0014FAAC /* NikeDunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeDunk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				FB120D9325CC409B0058D141 /* Assets.xcassets */,
 				FB120D9825CC409B0058D141 /* Info.plist */,
 				FB120D9525CC409B0058D141 /* Preview Content */,
+				FBB281B825CDA8ED0014FAAC /* Darius.swift */,
+				FBB281BB25CDA9010014FAAC /* Hockey.swift */,
+				FBB281BE25CDA92F0014FAAC /* NikeDunk.swift */,
 			);
 			path = FavouriteThing;
 			sourceTree = "<group>";
@@ -140,6 +149,9 @@
 			files = (
 				FB120D9225CC40970058D141 /* ContentView.swift in Sources */,
 				FB120D9025CC40970058D141 /* FavouriteThingApp.swift in Sources */,
+				FBB281BC25CDA9010014FAAC /* Hockey.swift in Sources */,
+				FBB281BF25CDA92F0014FAAC /* NikeDunk.swift in Sources */,
+				FBB281B925CDA8ED0014FAAC /* Darius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

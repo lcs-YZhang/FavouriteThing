@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  AE86.swift
 //  FavouriteThing
 //
-//  Created by Steven Zhang on 2021-02-04.
+//  Created by Steven Zhang on 2021-02-05.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct Darius: View {
     var body: some View {
         VStack {
             Image("Darius")
@@ -21,8 +21,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AE86_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Darius()
     }
 }
