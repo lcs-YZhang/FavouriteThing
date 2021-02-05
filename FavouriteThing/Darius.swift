@@ -17,7 +17,7 @@ struct Darius: View {
             Text("Face your fear, face the Darius")
             
         }
-
+        .navigationTitle("Darius")
     }
 }
 
