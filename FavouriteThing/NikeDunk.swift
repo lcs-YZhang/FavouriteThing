@@ -9,12 +9,20 @@ import SwiftUI
 
 struct NikeDunk: View {
     var body: some View {
-        Text("Nike Dunk World!")
-    }
+        VStack {
+            Image("NikeDunk")
+                .resizable()
+                .scaledToFit()
+            
+            Text("I love Dunks. It's the most beautiful shoes in the world. ")
+       }
+        .navigationTitle("Nike Dunks")    }
 }
 
 struct NikeDunk_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView {
         NikeDunk()
-    }
+       }
+   }
 }

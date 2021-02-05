@@ -23,6 +23,8 @@ struct Darius: View {
 
 struct AE86_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView {
         Darius()
-    }
+     }
+   }
 }

@@ -9,12 +9,20 @@ import SwiftUI
 
 struct Hockey: View {
     var body: some View {
-        Text("Hockey")
+        VStack {
+            Image("Hockey")
+                .resizable()
+                .scaledToFit()
+            
+            Text("Try to play hockey, it's fun.")
+       }
+        .navigationTitle("Hockey")
     }
 }
-
 struct Hockey_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView {
         Hockey()
+       }
     }
 }
