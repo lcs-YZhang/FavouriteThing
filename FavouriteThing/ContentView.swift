@@ -12,49 +12,22 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink(destination: Darius()) {
-                    HStack {
-                        Text("🎮")
-                        
-                        VStack(alignment: .leading) {
-                            Text("Darius")
-                                .fontWeight(.black)
-                                
-                            
-                            Text("Face the Darius from the glorius ")
-                        }
-                      
-                    }
+                    ListedItem(hint: "🎮",
+                               title: "Darius",
+                               summary: "Face the Darius from the glorius Noxian")
                     
                 }
                 
                 NavigationLink(destination: Hockey()) {
-                    HStack {
-                        Text("🏒")
-                        
-                        VStack(alignment: .leading) {
-                            Text("Hockey")
-                                .fontWeight(.black)
-                                
-                            
-                            Text("Try hockey, it's fun ")
-                        }
-                      
-                    }
+                    ListedItem(hint: "🏒",
+                               title: "Hokey",
+                               summary: "Try hocket, it's fun!")
                 }
                 
                 NavigationLink(destination: NikeDunk()) {
-                    HStack {
-                        Text("👟")
-                        
-                        VStack(alignment: .leading) {
-                            Text("Nike Dunk")
-                                .fontWeight(.black)
-                                
-                            
-                            Text("Nike Dunk is the best!")
-                        }
-                      
-                    }
+                    ListedItem(hint: "👟",
+                               title: "Nike Dunk",
+                               summary: "Nike Dunk is the best!!")
                 }
             }
             .navigationTitle("Favrouite Things")
@@ -70,3 +43,26 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 }
+
+struct ListedItem: View {
+    var hint: String
+    var title: String
+    var summary:String
+    
+    
+    var body: some View {
+        HStack {
+            Text(hint)
+            
+            VStack(alignment: .leading) {
+                Text(title)
+                    .fontWeight(.black)
+                
+                
+                Text(summary)
+            }
+            
+        }
+    }
+}
+
