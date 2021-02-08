@@ -23,6 +23,7 @@ struct NikeDunk_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
         NikeDunk()
-       }
+        }
+        .preferredColorScheme(.dark)
    }
 }

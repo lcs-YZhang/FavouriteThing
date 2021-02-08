@@ -12,20 +12,20 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink(destination: Darius()) {
-                    ListedItem(hint: "🎮",
+                    ListItem(hint: "🎮",
                                title: "Darius",
                                summary: "Face the Darius from the glorius Noxian")
                     
                 }
                 
                 NavigationLink(destination: Hockey()) {
-                    ListedItem(hint: "🏒",
+                    ListItem(hint: "🏒",
                                title: "Hokey",
                                summary: "Try hocket, it's fun!")
                 }
                 
                 NavigationLink(destination: NikeDunk()) {
-                    ListedItem(hint: "👟",
+                    ListItem(hint: "👟",
                                title: "Nike Dunk",
                                summary: "Nike Dunk is the best!!")
                 }
@@ -44,25 +44,4 @@ struct ContentView_Previews: PreviewProvider {
 }
 }
 
-struct ListedItem: View {
-    var hint: String
-    var title: String
-    var summary:String
-    
-    
-    var body: some View {
-        HStack {
-            Text(hint)
-            
-            VStack(alignment: .leading) {
-                Text(title)
-                    .fontWeight(.black)
-                
-                
-                Text(summary)
-            }
-            
-        }
-    }
-}
 

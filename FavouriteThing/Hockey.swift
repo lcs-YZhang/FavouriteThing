@@ -24,6 +24,7 @@ struct Hockey_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
         Hockey()
-       }
+        }
+        .preferredColorScheme(.dark)
     }
 }
