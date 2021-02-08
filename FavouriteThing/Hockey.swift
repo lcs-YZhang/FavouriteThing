@@ -9,13 +9,14 @@ import SwiftUI
 
 struct Hockey: View {
     var body: some View {
-        VStack {
+        ScrollView {
             Image("Hockey")
                 .resizable()
                 .scaledToFit()
             
-            Text("Try to play hockey, it's fun.")
-       }
+            Text("Try to play hockey, it's fun!, ")
+        }
+        .padding(.horizontal, 10.0)
         .navigationTitle("Hockey")
     }
 }

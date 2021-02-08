@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NikeDunk: View {
     var body: some View {
-        VStack {
+        ScrollView {
             Image("NikeDunk")
                 .resizable()
                 .scaledToFit()

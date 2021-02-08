@@ -12,15 +12,49 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink(destination: Darius()) {
-                    Text("Darius")
+                    HStack {
+                        Text("🎮")
+                        
+                        VStack(alignment: .leading) {
+                            Text("Darius")
+                                .fontWeight(.black)
+                                
+                            
+                            Text("Face the Darius from the glorius ")
+                        }
+                      
+                    }
+                    
                 }
                 
                 NavigationLink(destination: Hockey()) {
-                    Text("Hockey")
+                    HStack {
+                        Text("🏒")
+                        
+                        VStack(alignment: .leading) {
+                            Text("Hockey")
+                                .fontWeight(.black)
+                                
+                            
+                            Text("Try hockey, it's fun ")
+                        }
+                      
+                    }
                 }
                 
                 NavigationLink(destination: NikeDunk()) {
-                    Text("NikeDunk")
+                    HStack {
+                        Text("👟")
+                        
+                        VStack(alignment: .leading) {
+                            Text("Nike Dunk")
+                                .fontWeight(.black)
+                                
+                            
+                            Text("Nike Dunk is the best!")
+                        }
+                      
+                    }
                 }
             }
             .navigationTitle("Favrouite Things")
@@ -30,6 +64,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .preferredColorScheme(.dark)
     }
+}
 }
