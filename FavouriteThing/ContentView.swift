@@ -8,29 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    //create a copy of the data that we create
+    //A store in developer's speak, is just a place to store data
+    var store = favouriteThing
+    
     var body: some View {
         NavigationView {
-            List {
-                NavigationLink(destination: Darius()) {
-                    ListItem(hint: "🎮",
-                               title: "Darius",
-                               summary: "Face the Darius from the glorius Noxian")
+            List(favouriteThing) { thing in
+
+                NavigationLink(destination: ThingDetail(heroImage: thing.heroImage,
+                                                        detail: thing.details,
+                                                        title: thing.title)) {
+                    
+                    ListItem(hint: thing.hint,
+                             title: thing.title,
+                             summary: thing.summary)
                     
                 }
                 
-                NavigationLink(destination: Hockey()) {
-                    ListItem(hint: "🏒",
-                               title: "Hokey",
-                               summary: "Try hocket, it's fun!")
-                }
-                
-                NavigationLink(destination: NikeDunk()) {
-                    ListItem(hint: "👟",
-                               title: "Nike Dunk",
-                               summary: "Nike Dunk is the best!!")
-                }
+
             }
-            .navigationTitle("Favrouite Things")
+            .navigationTitle("Favourite Things")
        }
    }
 }
