@@ -41,6 +41,6 @@ let favouriteThing = [
           title: "GameDesign",
           summary: "I want to be a game designer",
           heroImage: "GameDesign",
-          details: "olaolaola")
+          details: "Game design sits under the broader field of video game development and refers to the use of creativity and design to develop a game for entertainment or educational purposes. It involves creating compelling stories, characters, goals, rules and challenges that drive interactions with other characters, users or objects.")
 ]
 

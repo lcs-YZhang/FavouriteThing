@@ -15,7 +15,7 @@ struct ThingDetail: View {
     
     var body: some View {
         ScrollView {
-            Image("Darius")
+            Image(heroImage)
                 .resizable()
                 .scaledToFit()
             
