@@ -12,13 +12,13 @@ struct ContentView: View {
     //A store in developer's speak, is just a place to store data
     var store = favouriteThing
     
-    var boay: some View {
+    var body: some View {
         NavigationView {
             List(favouriteThing) { thing in
 
-                NavigationLink(destination: ThingDetail (someThing: Thing)){
+                NavigationLink(destination: ThingDetail (someThing: thing)){
                     
-                    ListItem(someThing: Thing)
+                    ListItem(someThing: thing)
                     
                 }
             }

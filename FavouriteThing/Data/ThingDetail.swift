@@ -12,13 +12,13 @@ struct ThingDetail: View {
     
     var body: some View {
         ScrollView {
-            ForEach(someThing.Segment) {Segment in
+            ForEach(someThing.segment) { segment in
                 
-                Image(Segment.image)
+                Image(segment.image)
                     .resizable()
                     .scaledToFit()
                 
-                Text(Segment.details)
+                Text(segment.text)
                     .padding(.horizontal, 25.0)
                     .preferredColorScheme(.dark)
                     .environment(\.sizeCategory, .extraExtraLarge)
